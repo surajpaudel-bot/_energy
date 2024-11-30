@@ -3,6 +3,10 @@ This repository contains test cases for the Energy App, which includes functiona
 #Tests Overview
 The test suite ensures that all core features of the app work correctly. The tests focus on verifying the behavior of key classes and methods, including Consumer, Prosumer, EnergyStorage, and MarketData.
 
+# Install project file from NPM
+  bash -  npm i energy_app_ts
+
+
 #Instruction to run jest test
   #Install Jest and TypeScript (if not already installed):
     bash --   npm install --save-dev jest ts-jest @types/jest
