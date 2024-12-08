@@ -1,3 +1,10 @@
+# _energy Project
+
+[![CI](https://github.com/surajpaudel-bot/_energy/actions/workflows/ci.yml/badge.svg)](https://github.com/surajpaudel-bot/_energy/actions/workflows/ci.yml)
+
+This project automates energy grid management with continuous integration testing using GitHub Actions.
+
+
 ##Distributed Renewable Energy Trading Platform:
 
  This project is a simulation of a Distributed Renewable Energy Trading Platform where users, including Prosumers and Consumers, can trade renewable energy. 
