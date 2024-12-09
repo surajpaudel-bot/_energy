@@ -64,4 +64,83 @@ The system updates the grid balance and manages energy storage accordingly.
     Market insights can be fetched.
 
 
+##### Test Cases performed and it's Overview
+It contains test cases for the Energy App, which includes functionality for Consumer, Prosumer, Energy Storage, Market Data, and related modules. This README outlines how to run the tests, explains what each test case verifies, and provides a summary of recent changes and test runs.
+
+#Tests Overview
+The test suite ensures that all core features of the app work correctly. The tests focus on verifying the behavior of key classes and methods, including Consumer, Prosumer, EnergyStorage, and MarketData.
+
+# Install project file from NPM
+  bash -  npm i energy_app_ts
+
+
+#Instruction to run jest test
+  #Install Jest and TypeScript (if not already installed):
+    bash --   npm install --save-dev jest ts-jest @types/jest
+
+#Configure Jest
+       module.exports = {
+       preset: 'ts-jest',
+       testEnvironment: 'node',
+     };
+#Create Test Files
+  For example: consumer.test.ts
+
+#Run all tests:
+  bash - npm test
+#Run tests for a specific file:
+  bash - npx jest src/tests/consumer.test.ts
+
+#View the Test Results
+
+   PS C:\Users\soora\energy\_energy> npm test
+
+   > energy_app_ts@1.0.2 test
+   > jest
+
+ PASS  src/tests/prosumer.test.ts
+ PASS  src/tests/energyStorage.test.ts
+ PASS  src/tests/gridBalance.test.ts
+ PASS  src/tests/consumer.test.ts
+ PASS  src/tests/marketData.test.ts
+
+Test Suites: 5 passed, 5 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        2.606 s, estimated 3 s
+Ran all test suites.
+PS C:\Users\soora\energy\_energy> 
+
+
+
+
+
+
+#Test cases/Expected output for each test.
+   #consumer.test.ts
+    √ should create a new Consumer: Verifies the creation of a new Consumer object.
+    √ should browse listings: Ensures that the Consumer can browse available energy listings.
+    √ should select a listing and create a transaction: Confirms that the Consumer can select an energy listing and create a transaction.
+
+   #energyStorage.test.ts
+    √ should manage energy storage: Tests the functionality of the EnergyStorage class, ensuring it correctly stores and releases energy.
+
+   #gridBalance.test.ts
+    √ should update grid balance: Verifies that the GridBalance updates as expected during transactions and energy changes.
+
+   #marketData.test.ts
+    √ should fetch market insights: Ensures the MarketData class fetches the correct market insights, such as average price and total listings.
+      prosumer.test.ts
+    √ should create a new Prosumer: Verifies the creation of a new Prosumer object.
+    √ should create an energy listing: Confirms that the Prosumer can create an energy listing with specified attributes.
+
+
+
+
+
+
+
+
+
+
     
